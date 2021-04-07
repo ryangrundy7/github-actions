@@ -35,3 +35,7 @@ jobs:
         run: |
           echo $SECRET_KEY | docker login -u _json_key --password-stdin https://eu.gcr.io
           echo test, and deploy your project.
+      - name: Test docker pull
+        run: |
+          docker pull eu.gcr.io/census-rm-ryangrundy/ci/census-rm-action-scheduler:latest
+          docker images
