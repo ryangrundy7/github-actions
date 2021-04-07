@@ -37,5 +37,5 @@ jobs:
           echo test, and deploy your project.
       - name: Test docker pull
         run: |
-          docker pull eu.gcr.io/census-rm-ryangrundy/ci/census-rm-action-scheduler:latest
+          docker pull eu.gcr.io/census-rm-ryangrundy/rm/census-rm-action-scheduler:latest
           docker images
